@@ -1,0 +1,25 @@
+from Levenshtein import ratio
+
+from .auto.domain_whitelist import data as _whitelist_data
+from .auto.domain_blacklist import data as _blacklist_data
+
+
+def is_whitelisted(domain: str) -> bool:
+    return domain_in_list(domain, _whitelist_data)
+
+
+def is_blacklisted(domain: str) -> bool:
+    return domain_in_list(domain, _blacklist_data)
+
+
+def domain_in_list(domain: str, collection) -> bool:
+    if domain in collection:
+        return True
+    for hostname in collection:
+        if domain.endswith("." + hostname):
+            return True
+    return False
+
+
+def get_highest_blacklist_match(domain: str, match=ratio) -> float:
+    return max(match(domain, x) for x in _blacklist_data)
