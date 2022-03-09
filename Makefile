@@ -6,9 +6,11 @@ test:
 
 coverage:
 	coverage run -m pytest .
-	coverage report -m
+	coverage report -m --fail-under 100
 
 lint:
 	flake8 . --max-line-length 88
+	mypy .
+	codespell . --skip ".*,auto"
 
 test-all: coverage lint

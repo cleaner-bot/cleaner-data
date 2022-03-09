@@ -1,4 +1,4 @@
-from Levenshtein import ratio
+from Levenshtein import ratio  # type: ignore
 
 from .auto.phishing_content import data as _data
 from .normalize import normalize

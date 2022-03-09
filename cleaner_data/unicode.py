@@ -3,7 +3,7 @@ import unicodedata
 from .auto.unicode import data as _unicode_rawdata
 
 
-_unicode_data = {}
+_unicode_data: dict[str, str] = {}
 
 
 def normalize_unicode(normalize_unicode: str) -> str:
