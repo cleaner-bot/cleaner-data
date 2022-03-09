@@ -19,4 +19,5 @@ setup(
     description="data of the cleaner",
     requires=parse_requirements_file("requirements.txt"),
     packages=find_namespace_packages(include=["cleaner_data*"]),
+    package_data={"cleaner_data": ["py.typed"]},
 )
