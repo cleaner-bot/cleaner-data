@@ -17,7 +17,7 @@ setup(
     author="Leo Developer",
     author_email="git@leodev.xyz",
     description="data of the cleaner",
-    requires=parse_requirements_file("requirements.txt"),
+    install_requires=parse_requirements_file("requirements.txt"),
     packages=find_namespace_packages(include=["cleaner_data*"]),
     package_data={"cleaner_data": ["py.typed"]},
 )
