@@ -1,13 +1,7 @@
 from setuptools import setup, find_namespace_packages  # type: ignore
+from pathlib import Path
 
 from cleaner_data import __version__
-
-
-def parse_requirements_file(path):
-    with open(path) as file:
-        lines = file.read().splitlines()
-    dependencies = (x.strip() for x in lines)
-    return [x for x in dependencies if x and not x.startswith("#")]
 
 
 setup(
@@ -17,7 +11,7 @@ setup(
     author="Leo Developer",
     author_email="git@leodev.xyz",
     description="data of the cleaner",
-    install_requires=parse_requirements_file("requirements.txt"),
+    install_requires=Path("requirements.txt").read_text().splitlines(),
     packages=find_namespace_packages(include=["cleaner_data*"]),
     package_data={"cleaner_data": ["py.typed"]},
 )
