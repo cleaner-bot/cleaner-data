@@ -14,3 +14,4 @@ def test_get_highest_match():
     )
 
     assert get_highest_phishing_match(input) == 1
+    assert get_highest_phishing_match(input[20:]) >= 0.9

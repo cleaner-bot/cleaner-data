@@ -19,3 +19,4 @@ def test_is_blacklisted():
 
 def test_get_highest_match():
     assert 1 >= get_highest_domain_blacklist_match("discord.com") >= 0.9
+    assert get_highest_domain_blacklist_match("go-discord.com") == 1

@@ -22,4 +22,6 @@ def domain_in_list(domain: str, collection) -> bool:
 
 
 def get_highest_domain_blacklist_match(domain: str, match=ratio) -> float:
+    if domain in _blacklist_data:
+        return 1
     return max(match(domain, x) for x in _blacklist_data)
