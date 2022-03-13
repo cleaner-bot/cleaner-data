@@ -1,7 +1,6 @@
 # flake8: noqa E501
 data = {
     "all-nitro.xyz",
-    "amitydiscord.ml",
     "app-dicsord.ru",
     "axie-bot.fun",
     "best-discorde.com",
@@ -9,6 +8,7 @@ data = {
     "code-nitro.xyz",
     "cord.twilight.sh",
     "d-giftnitro.com",
+    "d-giftpremium.com",
     "dfscord-app.com",
     "dfscord.com",
     "dicsord-gifte.ru",
@@ -124,7 +124,6 @@ data = {
     "discordsteaml.com",
     "discordsteamr.com",
     "discordtapp.com",
-    "discordtoken.org",
     "discore-nitro.xyz",
     "discorl.gift",
     "discorld-gift.xyz",
@@ -238,7 +237,6 @@ data = {
     "e-giftvip.com",
     "egift-now.com",
     "egiftpremium.com",
-    "encrypted-tbn0.gstatic.com",
     "full-nitro.xyz",
     "g-discord-nitro.com",
     "giant.gfycat.com",
@@ -292,7 +290,6 @@ data = {
     "nitrosteaml.com",
     "nitrosteamt.com",
     "nitrrosteam.com",
-    "nitter.pussthecat.org",
     "nltroglfts.ru",
     "roblox.com.af",
     "rust-tve.com",
@@ -332,7 +329,6 @@ data = {
     "steamtnitro.com",
     "stellseeriesnitros.com",
     "store-srupowered.ru",
-    "vww-robiox.com",
     "www-rovblox.com",
     "www-web-rcblox.com",
 }
