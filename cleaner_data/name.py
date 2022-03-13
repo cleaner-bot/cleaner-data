@@ -9,6 +9,8 @@ def is_name_blacklisted(
         name = normalize(name)
     if collection is None:
         collection = _blacklist_data
+    if not name:
+        return False
     return all(w in collection for w in name.split())
 
 
@@ -19,5 +21,7 @@ def name_blacklist_ratio(
         name = normalize(name)
     if collection is None:
         collection = _blacklist_data
+    if not name:
+        return False
     words = name.split()
     return sum(1 for w in words if w in collection) / len(words)
