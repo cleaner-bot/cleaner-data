@@ -1,0 +1,21 @@
+# flake8: noqa E501
+data = {
+    "developer",
+    "partners",
+    "exam",
+    "events",
+    "devbot",
+    "mod",
+    "support",
+    "intents",
+    "api",
+    "partner",
+    "message",
+    "moderator",
+    "academy",
+    "developers",
+    "hypesquad",
+    "moderators",
+    "discord",
+    "moderation",
+}
