@@ -18,4 +18,7 @@ data = {
     "moderators",
     "discord",
     "moderation",
+    "testers",
+    "staff",
+    "system",
 }
