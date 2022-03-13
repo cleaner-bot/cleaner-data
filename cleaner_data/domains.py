@@ -4,11 +4,11 @@ from .auto.domain_whitelist import data as _whitelist_data
 from .auto.domain_blacklist import data as _blacklist_data
 
 
-def is_whitelisted(domain: str) -> bool:
+def is_domain_whitelisted(domain: str) -> bool:
     return domain_in_list(domain, _whitelist_data)
 
 
-def is_blacklisted(domain: str) -> bool:
+def is_domain_blacklisted(domain: str) -> bool:
     return domain_in_list(domain, _blacklist_data)
 
 
@@ -21,5 +21,5 @@ def domain_in_list(domain: str, collection) -> bool:
     return False
 
 
-def get_highest_blacklist_match(domain: str, match=ratio) -> float:
+def get_highest_domain_blacklist_match(domain: str, match=ratio) -> float:
     return max(match(domain, x) for x in _blacklist_data)

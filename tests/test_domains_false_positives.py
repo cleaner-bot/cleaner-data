@@ -1,9 +1,9 @@
 import pytest
 
 from cleaner_data.domains import (
-    is_whitelisted,
-    is_blacklisted,
-    get_highest_blacklist_match,
+    is_domain_whitelisted,
+    is_domain_blacklisted,
+    get_highest_domain_blacklist_match,
 )
 
 
@@ -16,8 +16,8 @@ false_positives = (
 
 @pytest.mark.parametrize("domain", false_positives)
 def test_false_positive(domain):
-    if is_whitelisted(domain):
+    if is_domain_whitelisted(domain):
         return
 
-    assert not is_blacklisted(domain)
-    assert get_highest_blacklist_match("gist.github.com") < 0.9
+    assert not is_domain_blacklisted(domain)
+    assert get_highest_domain_blacklist_match("gist.github.com") < 0.9

@@ -1,6 +1,6 @@
 import textwrap
 
-from cleaner_data.phishing_content import get_highest_match
+from cleaner_data.phishing_content import get_highest_phishing_match
 
 
 def test_get_highest_match():
@@ -13,4 +13,4 @@ def test_get_highest_match():
     https://redacted.com/welcomes"""
     )
 
-    assert get_highest_match(input) == 1
+    assert get_highest_phishing_match(input) == 1
