@@ -12,6 +12,7 @@ def has_url(content: str) -> bool:
 
 
 def get_urls(content: str) -> typing.Generator[str, None, None]:
+    # TODO: handle markdown urls
     words = content.split()
     for word in words:
         if "://" not in word:
