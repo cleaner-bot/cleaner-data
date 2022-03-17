@@ -12,7 +12,6 @@ def has_url(content: str) -> bool:
 
 
 def get_urls(content: str) -> typing.Generator[str, None, None]:
-    # TODO: handle markdown urls
     words = content.split()
     for word in words:
         if "://" not in word:
@@ -28,7 +27,11 @@ def get_urls(content: str) -> typing.Generator[str, None, None]:
 
         start = word.index(f"{scheme}://")
         url = word[start:]
-        yield url
+        if url.endswith(")"):
+            count = url.count("(") - url.count(")")
+            yield url[:-1] if count < 0 else url
+        else:
+            yield url.rstrip("]")
 
 
 def remove_urls(content: str):

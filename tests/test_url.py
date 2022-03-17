@@ -1,3 +1,5 @@
+import pytest
+
 from cleaner_data.url import has_url, get_urls, remove_urls
 
 
@@ -16,3 +18,28 @@ def test_get_urls():
 def test_remove_urls():
     data = "hello world http://test.com http://test.com/abcdef ftp://test.org"
     assert remove_urls(data) == "hello world   ftp://test.org"
+
+
+@pytest.mark.parametrize(
+    ("message", "expected"),
+    (
+        ("[test](http://test.com)", "http://test.com"),
+        ("http://test.com)", "http://test.com"),
+        ("http://test.com()", "http://test.com()"),
+        ("http://test.com())", "http://test.com()"),
+        ("http://test.com]", "http://test.com"),
+        ("http://test.com[]", "http://test.com["),
+        ("http://test.com])", "http://test.com]"),
+        ("http://test.com[])", "http://test.com[]"),
+        ("http://test.com))", "http://test.com)"),
+        ("http://test.com(()", "http://test.com(()"),
+        ("http://test.com(())", "http://test.com(())"),
+        ("http://test.com(()))", "http://test.com(())"),
+        ("http://test.com(()", "http://test.com(()"),
+        ("http://test.com[[[[]]]", "http://test.com[[[["),
+        ("http://test.com[[[[[]]]]])", "http://test.com[[[[[]]]]]"),
+    ),
+)
+def test_markdown_url(message: str, expected: str):
+    (url,) = list(get_urls(message))
+    assert url == expected
