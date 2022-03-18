@@ -15,6 +15,8 @@ data = {
     "academy",
     "developers",
     "hypesquad",
+    "hype",
+    "squad",
     "moderators",
     "discord",
     "moderation",
