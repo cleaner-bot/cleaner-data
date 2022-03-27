@@ -7,7 +7,7 @@ testdata = (
     ("@everyone", ""),
     ("@here", ""),
     ("testhttp://test.com", "test"),
-    ("a. b.cdef-gh", "a bcdefgh"),
+    ("a. b.cdef-gh", "a b cdef gh"),
     ("a\nb\nc", "a b c"),
     ("A B C", "a b c"),
     ("c b a", "a b c"),

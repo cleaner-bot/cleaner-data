@@ -7,6 +7,7 @@ def normalize(
     *,
     remove_urls: bool = True,
     remove_mentions: bool = True,
+    lowercase_content: bool = True,
     normalize_unicode: bool = True,
     normalize_words: bool = True,
 ):
@@ -16,13 +17,21 @@ def normalize(
         content = _remove_urls(content).strip()
     if normalize_unicode:
         content = _normalize_unicode(content)
+    if lowercase_content:
+        content = content.lower()
     if normalize_words:
-        words = content.split()
-        content = " ".join(
-            x for x in sorted(set(normalize_word(w) for w in words)) if x
-        )
+        words = split_at_non_alpha(content)
+        content = " ".join(x for x in sorted(set(words)) if x)
     return content
 
 
-def normalize_word(word: str) -> str:
-    return "".join(x.lower() for x in word if x.isalpha())
+def split_at_non_alpha(word: str):
+    start = 0
+    for end, char in enumerate(word):
+        if not char.isalpha():
+            if end > start:
+                yield word[start:end]
+            start = end + 1
+
+    if start < len(word):
+        yield word[start:]
