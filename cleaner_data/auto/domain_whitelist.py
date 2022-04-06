@@ -42,4 +42,5 @@ data = {
     "youtu.be",
     "youtube.com",
     "pixiv.net",
+    "telegra.ph",
 }
