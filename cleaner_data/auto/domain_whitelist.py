@@ -43,4 +43,5 @@ data = {
     "youtube.com",
     "pixiv.net",
     "telegra.ph",
+    "imgur.com",
 }

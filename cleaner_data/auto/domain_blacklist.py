@@ -297,7 +297,6 @@ data = {
     "gitxhub.com",
     "go-discord.com",
     "hypixel.run",
-    "imgur.com",
     "iron-nitro.com",
     "l-nitro.xyz",
     "ldiscordapp.com",
