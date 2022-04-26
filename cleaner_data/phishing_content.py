@@ -5,7 +5,7 @@ from .normalize import normalize
 
 
 def get_highest_phishing_match(content: str, match=ratio) -> float:
-    content = normalize(content)
+    content = normalize(content, normalize_unicode=False)
     if content in _phishing_data:
         return 1
     return max(match(content, message) for message in _phishing_data)

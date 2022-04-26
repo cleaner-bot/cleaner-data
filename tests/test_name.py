@@ -1,6 +1,8 @@
 import pytest
 
 from cleaner_data.name import is_name_blacklisted, name_blacklist_ratio
+from cleaner_data.unicode import normalize_unicode
+from cleaner_data.auto.name_blacklist import data
 
 
 testdata = (
@@ -39,3 +41,8 @@ testdata = (
 def test_name_blacklist(name: str):
     assert is_name_blacklisted(name)
     assert name_blacklist_ratio(name) == 1
+
+
+@pytest.mark.parametrize("name", data)
+def test_all_are_normalized(name):
+    assert name == normalize_unicode(name)

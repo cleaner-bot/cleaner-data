@@ -7,9 +7,18 @@ _unicode_data: dict[str, str] = {}
 
 
 def normalize_unicode(normalize_unicode: str) -> str:
-    return "".join(
-        _unicode_data.get(x, unicodedata.normalize("NFKD", x))
-        for x in normalize_unicode
+    return (
+        "".join(
+            _unicode_data.get(x, unicodedata.normalize("NFKD", x))
+            for x in normalize_unicode
+        )
+        .lower()
+        .replace("1", "i")
+        .replace("3", "e")
+        .replace("0", "o")
+        .replace("v", "u")
+        .replace("w", "u")
+        .replace("q", "o")
     )
 
 
