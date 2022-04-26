@@ -23,4 +23,5 @@ data = {
     "testers",
     "staff",
     "system",
+    "modmail",
 }
