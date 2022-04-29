@@ -1,5 +1,6 @@
 # flake8: noqa E501
 data = {
+    "1month-premium.com",
     "3month-get.com",
     "3month-give.com",
     "3month-premium.com",
@@ -34,8 +35,10 @@ data = {
     "dicsords-give.ru",
     "dicsred.gift",
     "dicsrod-egift.com",
+    "dicsrod-egift.ru",
     "dicsrod-egifts.com",
     "dicsrod-gifts.com",
+    "dicsrods-egift.com",
     "diiscord-app.com",
     "diiscord-nitro.com",
     "dilscocd.com",
@@ -198,6 +201,7 @@ data = {
     "discrode.com",
     "discrode.gift",
     "discrods-egift.com",
+    "discrods-egift.ru",
     "discrods.gift",
     "discroed.gift",
     "discrrd.com",
@@ -265,6 +269,7 @@ data = {
     "dlscord.gift",
     "dlscord.gifts",
     "dlscordairdropi.com",
+    "dlscordalrdrop.com",
     "dlscordapp.shop",
     "dlscorde-go.com",
     "dlscordfreegift.com",

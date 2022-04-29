@@ -207,6 +207,7 @@ data = {
     "for gived hey new nitro steam the year",
     "fox free galaxy giveaway",
     "free from nitro steam",
+    "free get nitro",
     "free here is nitro",
     "free nitro",
     "friends hi my password please program programming testing this translate",
