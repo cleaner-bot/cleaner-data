@@ -299,6 +299,7 @@ data = {
     "dlscrod-go.com",
     "dlsocrd-gift.com",
     "dlsscord-gift.com",
+    "dnitropremum.ru",
     "ds-app.gq",
     "ds-giftnitro.com",
     "dscd-nitro.ru",
