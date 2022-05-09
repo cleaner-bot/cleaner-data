@@ -1,6 +1,5 @@
 import typing
 
-
 SCHEMES = ("http", "https")
 
 

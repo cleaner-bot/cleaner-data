@@ -2,7 +2,6 @@ import pytest
 
 from cleaner_data.normalize import normalize
 
-
 testdata = (
     ("@everyone", ""),
     ("@here", ""),

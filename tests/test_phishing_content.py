@@ -2,9 +2,9 @@ import textwrap
 
 import pytest
 
-from cleaner_data.phishing_content import get_highest_phishing_match
-from cleaner_data.normalize import normalize
 from cleaner_data.auto.phishing_content import data
+from cleaner_data.normalize import normalize
+from cleaner_data.phishing_content import get_highest_phishing_match
 
 
 def test_get_highest_match():

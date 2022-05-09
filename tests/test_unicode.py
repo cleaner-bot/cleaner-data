@@ -2,7 +2,6 @@ import pytest
 
 from cleaner_data.unicode import normalize_unicode
 
-
 testdata = (
     ("𝕙Ëʟp d𝓮šK", "hELp desK"),
     ("ＭＥＥ６ Ａｖａｔａｒｓ ＮＦＴ | Ｍｉｎｔ", "MEE6 Avatars NFT | Mint"),

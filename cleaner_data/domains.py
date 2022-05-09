@@ -1,7 +1,7 @@
 from Levenshtein import ratio  # type: ignore
 
-from .auto.domain_whitelist import data as _whitelist_data
 from .auto.domain_blacklist import data as _blacklist_data
+from .auto.domain_whitelist import data as _whitelist_data
 
 
 def is_domain_whitelisted(domain: str) -> bool:

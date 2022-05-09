@@ -1,9 +1,8 @@
 import pytest
 
+from cleaner_data.auto.name_blacklist import data
 from cleaner_data.name import is_name_blacklisted, name_blacklist_ratio
 from cleaner_data.unicode import normalize_unicode
-from cleaner_data.auto.name_blacklist import data
-
 
 testdata = (
     "Moderator Academy Exam",

@@ -2,7 +2,6 @@ import unicodedata
 
 from .auto.unicode import data as _unicode_rawdata
 
-
 _unicode_data: dict[str, str] = {}
 
 

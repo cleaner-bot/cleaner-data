@@ -2,7 +2,6 @@ import pytest
 
 from cleaner_data.name import is_name_blacklisted, name_blacklist_ratio
 
-
 testdata = ("1234",)
 
 

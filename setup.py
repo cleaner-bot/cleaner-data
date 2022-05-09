@@ -1,8 +1,8 @@
-from setuptools import setup, find_namespace_packages  # type: ignore
 from pathlib import Path
 
-from cleaner_data import __version__
+from setuptools import find_namespace_packages, setup  # type: ignore
 
+from cleaner_data import __version__
 
 setup(
     name="cleaner_data",

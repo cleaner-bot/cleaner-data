@@ -1,6 +1,6 @@
 import pytest
 
-from cleaner_data.url import has_url, get_urls, remove_urls
+from cleaner_data.url import get_urls, has_url, remove_urls
 
 
 def test_has_url():

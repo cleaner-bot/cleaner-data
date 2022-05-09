@@ -1,7 +1,7 @@
 from cleaner_data.domains import (
-    is_domain_whitelisted,
-    is_domain_blacklisted,
     get_highest_domain_blacklist_match,
+    is_domain_blacklisted,
+    is_domain_whitelisted,
 )
 
 

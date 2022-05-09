@@ -3,7 +3,6 @@ from pathlib import Path
 
 from cleaner_data import __version__
 
-
 print("Bumping version")
 today = datetime.utcnow().date().strftime("%Y%m%d")
 
