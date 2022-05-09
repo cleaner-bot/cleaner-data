@@ -183,6 +183,7 @@ data = {
     "discord for free hi nitro take the",
     "discord for free hi nitro u",
     "discord for free month nitro",
+    "discord for free months nitro",
     "discord for free months nitro subscription",
     "discord for hi keep month nitro the",
     "discord for nitro you",
