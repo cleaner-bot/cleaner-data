@@ -24,4 +24,5 @@ data = {
     "staff",  # staff
     "system",  # system
     "modmail",  # modmail
+    "dbug",  # dbug
 }
