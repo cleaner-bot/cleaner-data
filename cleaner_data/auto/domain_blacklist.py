@@ -326,7 +326,6 @@ data = {
     "full-nitro.xyz",
     "g-discord-nitro.com",
     "get-3month.com",
-    "giant.gfycat.com",
     "giathub.com",
     "gibthub.com",
     "gidthub.com",
