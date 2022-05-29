@@ -25,4 +25,9 @@ data = {
     "system",  # system
     "modmail",  # modmail
     "dbug",  # dbug
+    "box",  # box
+    "mail",  # mail
+    "apply",  # apply
+    "beta",  # beta
+    "application",  # application
 }
