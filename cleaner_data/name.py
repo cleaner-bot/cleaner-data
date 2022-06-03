@@ -3,7 +3,7 @@ from .normalize import normalize
 
 
 def is_name_blacklisted(
-    name: str, collection: set[str] = None, normalize_name: bool = True
+    name: str, collection: set[str] | None = None, normalize_name: bool = True
 ) -> bool:
     if normalize_name:
         name = normalize(name)
@@ -15,7 +15,7 @@ def is_name_blacklisted(
 
 
 def name_blacklist_ratio(
-    name: str, collection: set[str] = None, normalize_name: bool = True
+    name: str, collection: set[str] | None = None, normalize_name: bool = True
 ) -> float:
     if normalize_name:
         name = normalize(name)

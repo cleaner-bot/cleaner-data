@@ -1,3 +1,5 @@
+import typing
+
 from .unicode import normalize_unicode as _normalize_unicode
 from .url import remove_urls as _remove_urls
 
@@ -10,7 +12,7 @@ def normalize(
     lowercase_content: bool = True,
     normalize_unicode: bool = True,
     normalize_words: bool = True,
-):
+) -> str:
     if remove_mentions:
         content = content.replace("@everyone", "").replace("@here", "").strip()
     if remove_urls:
@@ -25,7 +27,7 @@ def normalize(
     return content
 
 
-def split_at_non_alpha(word: str):
+def split_at_non_alpha(word: str) -> typing.Generator[str, None, None]:
     start = 0
     for end, char in enumerate(word):
         if not char.isalpha():

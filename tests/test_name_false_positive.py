@@ -6,6 +6,6 @@ testdata = ("1234",)
 
 
 @pytest.mark.parametrize("name", testdata)
-def test_name_blacklist(name: str):
+def test_name_blacklist(name: str) -> None:
     assert not is_name_blacklisted(name)
     assert name_blacklist_ratio(name) == 0

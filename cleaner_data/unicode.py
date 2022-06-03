@@ -21,7 +21,7 @@ def normalize_unicode(normalize_unicode: str) -> str:
     )
 
 
-def _init_unicode_data():
+def _init_unicode_data() -> None:
     for key, value in _unicode_rawdata.items():
         for variation in value:
             _unicode_data[variation] = key

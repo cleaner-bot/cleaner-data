@@ -14,7 +14,7 @@ false_positives = (
 
 
 @pytest.mark.parametrize("domain", false_positives)
-def test_false_positive(domain):
+def test_false_positive(domain: str) -> None:
     if is_domain_whitelisted(domain):
         return
 

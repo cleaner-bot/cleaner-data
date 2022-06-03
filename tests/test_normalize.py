@@ -15,5 +15,5 @@ testdata = (
 
 
 @pytest.mark.parametrize("content, expected", testdata)
-def test_normalize(content, expected):
+def test_normalize(content: str, expected: str) -> None:
     assert normalize(content) == expected

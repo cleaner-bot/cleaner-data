@@ -7,7 +7,7 @@ from cleaner_data.normalize import normalize
 from cleaner_data.phishing_content import get_highest_phishing_match
 
 
-def test_get_highest_match():
+def test_get_highest_match() -> None:
     input = textwrap.dedent(
         """@everyone
     • Free Discord Nitro AirDrop from Steam!
@@ -22,5 +22,5 @@ def test_get_highest_match():
 
 
 @pytest.mark.parametrize("name", data)
-def test_all_are_normalized(name):
+def test_all_are_normalized(name: str) -> None:
     assert name == normalize(name, normalize_unicode=False)

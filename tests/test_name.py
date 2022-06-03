@@ -37,11 +37,11 @@ testdata = (
 
 
 @pytest.mark.parametrize("name", testdata)
-def test_name_blacklist(name: str):
+def test_name_blacklist(name: str) -> None:
     assert is_name_blacklisted(name)
     assert name_blacklist_ratio(name) == 1
 
 
 @pytest.mark.parametrize("name", data)
-def test_all_are_normalized(name):
+def test_all_are_normalized(name: str) -> None:
     assert name == normalize_unicode(name)

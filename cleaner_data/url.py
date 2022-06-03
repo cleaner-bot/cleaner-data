@@ -33,7 +33,7 @@ def get_urls(content: str) -> typing.Generator[str, None, None]:
             yield url.rstrip("]")
 
 
-def remove_urls(content: str):
+def remove_urls(content: str) -> str:
     # remove the urls, starting with longest first
     # imagine this example: "http://test.com/ http//test.com/abcdef"
     # would keep "/abcdef"

@@ -46,5 +46,5 @@ testdata = (
 
 
 @pytest.mark.parametrize("text,expected", testdata)
-def test_normalize_unicode(text, expected):
+def test_normalize_unicode(text: str, expected: str) -> None:
     assert normalize_unicode(text) == normalize_unicode(expected)
