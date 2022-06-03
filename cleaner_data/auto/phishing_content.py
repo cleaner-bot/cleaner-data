@@ -15,6 +15,7 @@ data = {
     "a all are at can channel deceived details friend have hello in invested investment its locked my of on our part players project return spes start that the time to unlock you your",
     "a already and are bro choose clothing decided from fucked game give hi i inventory is my of one piece skins there this throw to trade up while",
     "a already and at can discord for free from get got haha here i is it look months nitro now promotion steam sup there u",
+    "a and announce any are arrow avoid can chance circle click congestion do down eth everyone exclamation fair forward give glad green here info is label links live mint minting nft not of on other panda pandaq point price public ribbon safe sale started stay supply tada that the to we 𝐓𝐡𝐚𝐧𝐤 𝐞𝐚𝐫𝐥𝐢𝐞𝐫 𝐬𝐭𝐚𝐫𝐭 𝐲𝐨𝐮",
     "a and are attaching away discord giving have heard hey i iam link need nitro steam take that think will you",
     "a and are away call discord even for free friends full get giving month more nitro xbox your",
     "a and are away call discord even for free friends full get giving months more nitro xbox your",
