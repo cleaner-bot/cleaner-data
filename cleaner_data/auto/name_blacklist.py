@@ -30,4 +30,5 @@ data = {
     "apply",  # apply
     "beta",  # beta
     "application",  # application
+    "team",  # team
 }
