@@ -32,6 +32,7 @@ data = {
     "clck.ru",
     "cutt.ly",
     "gg.gg",
+    "goo.su",
     "github.com",
     "google.com",
     "is.gd",
@@ -43,6 +44,7 @@ data = {
     "youtube.com",
     "pixiv.net",
     "telegra.ph",
+    "t.me",
     "imgur.com",
     "tiktok.com",
 }
