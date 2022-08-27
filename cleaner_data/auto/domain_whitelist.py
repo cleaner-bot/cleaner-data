@@ -22,6 +22,7 @@ data = {
     "discordstatus.com",
     "discordapp.io",
     "discordcdn.com",
+    "discord.statuspage.io",
     # other discord related domains
     "discordpy.readthedocs.io",
     "disboard.org",
