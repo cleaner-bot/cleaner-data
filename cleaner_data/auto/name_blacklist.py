@@ -11,6 +11,7 @@ data = {
     "api",  # api
     "partner",  # partner
     "message",  # message
+    "messages",  # messages
     "moderator",  # moderator
     "academy",  # academy
     "deuelopers",  # developers
