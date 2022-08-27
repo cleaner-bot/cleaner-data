@@ -27,10 +27,18 @@ def get_urls(content: str) -> typing.Generator[str, None, None]:
         start = word.index(f"{scheme}://")
         url = word[start:]
         if url.endswith(")"):
+            # handle urls with () in their path correctly
+            # test.com/) -> test.com
+            # test.com/() -> test.com()
+            # test.com/()) -> test.com()
             count = url.count("(") - url.count(")")
-            yield url[:-1] if count < 0 else url
+            url = url[:-1] if count < 0 else url
         else:
-            yield url.rstrip("]")
+            url = url.rstrip("]")
+        
+        # protocol://\test.com embeds but doesnt appear clickable,
+        # but lets still parse that correctly
+        yield url.replace("://\\", "://")
 
 
 def remove_urls(content: str) -> str:

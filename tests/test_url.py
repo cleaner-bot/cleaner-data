@@ -23,6 +23,8 @@ def test_remove_urls() -> None:
 @pytest.mark.parametrize(
     ("message", "expected"),
     (
+        ("http://", "http://"),
+        ("http://\\test.com", "http://test.com"),
         ("[test](http://test.com)", "http://test.com"),
         ("http://test.com)", "http://test.com"),
         ("http://test.com()", "http://test.com()"),
