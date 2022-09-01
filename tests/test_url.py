@@ -25,6 +25,9 @@ def test_remove_urls() -> None:
     (
         ("http://", "http://"),
         ("http://\\test.com", "http://test.com"),
+        ("http://\\\\\\\\\\\\\\\\\\test.com", "http://test.com"),
+        ("http://\\/test.com", "http://test.com"),
+        ("http://\\/\\/\\/\\/\\/\\/\\/test.com", "http://test.com"),
         ("[test](http://test.com)", "http://test.com"),
         ("http://test.com)", "http://test.com"),
         ("http://test.com()", "http://test.com()"),
